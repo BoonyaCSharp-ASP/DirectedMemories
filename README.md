@@ -27,10 +27,10 @@ There is one convention we will deliberately break. We plan to put picture frame
 
 ##Collaborators
 
-|Name|Github|
-|----|--------|
-| Abhishek Modi | [modi95](https://www.github.com/modi95) |
-|Eric Ahn|[wchill](https://www.github.com/wchill)|
-|Mark Miller| [MrMallIronmaker](https://www.github.com/MrMallIronmaker)|
+|Name|Github|Website|
+|----|--------|-----|
+| Abhishek Modi | [modi95](https://www.github.com/modi95) |http://www.akmodi.com|
+|Eric Ahn|[wchill](https://www.github.com/wchill)|http://www.intense.io|
+|Mark Miller| [MrMallIronmaker](https://www.github.com/MrMallIronmaker)| |
 
 Printable document at http://goo.gl/RMRTz8
