@@ -18,8 +18,8 @@
       <div class="inner">
 
         <header>
-          <h1>Directedmemories</h1>
-          <h2>3D Maze with Directed Audio Cues for the Oculus Rift.</h2>
+          <h1>Directed Memories</h1>
+          <h2>A Maze with Spatial Audio Cues for the Oculus Rift.</h2>
         </header>
 
         <section id="downloads" class="clearfix">
@@ -32,7 +32,7 @@
 
         <section id="main_content">
           <h1>
-<a id="directed-memories" class="anchor" href="#directed-memories" aria-hidden="true"><span class="octicon octicon-link"></span></a>Directed Memories</h1>
+<a id="directed-memories" class="anchor" href="#directed-memories" aria-hidden="true"><span class="octicon octicon-link"></span></a>Directed  Memories</h1>
 
 <p>It's a maze, it's a museum, there are ghosts, there are memories</p>
 
@@ -41,26 +41,22 @@
 
 <p>This is being developed as part of the final project for <strong>CS 498sl - Virtual Reality</strong> at the <strong>University of Illinois at Urbana - Champaign</strong> in the Spring 2016 Semester. This is the pilot offering of this class, and is instructed by Steve LaValle.</p>
 
-<p>We have two main motivations behind this project. The first of these is the technical problem of spacial audio. The implementation of audio in virtual reality has been attempted but not polished. Current audio engines are built for games with short, nearby sound effects (e.g, gunfire or splashing) and background music. To have a richer virtual reality experience, it must be possible to create richer audio that mimics real-world audio effects in real time. Publicly available research in spatial stereo audio is easy to find, however the publicly available implementations of spacial audio are unremarkable. The best available implementation we’ve found so far is RealSpace3D Audio, a plug in for Unity 3D; however, we did not find this sufficiently robust for our project. We therefore plan to use this as reference material while implementing our own algorithm for spatial audio.</p>
+<p>We have two main motivations behind this project. The first of these is the technical problem of spacial audio. The implementation of audio in virtual reality has been attempted but not polished. Current audio engines are built for games with short, nearby sound effects (e.g, gunfire or splashing) and background music. To have a richer virtual reality experience, it must be possible to create richer audio that mimics real-world audio effects in real time. Publicly available research in spatial stereo audio is easy to find, however the publicly available implementations of spacial audio are unremarkable. The best available implementation we’ve found so far is RealSpace3D Audio, a plug in for Unity 3D; however, we did not find this sufficiently robust for our project.</p>
 
-<p>The second is that of lingering horror. We often find people trying to convey horrific memories, such as those of wars, and similar tragic events. However this sentiment is rarely felt by the person receiving this communication as the magnitude of horror involved is often far greater than what the revier imagines. Usually, the feeling of horror only sets in when a more power stimulus is offered. This is usually the case with well crafted books, movies, and video games. We plan on exploring this effect in VR by providing similar stimuli.</p>
+<p>We have therefore implemented our own spatial audio algorithm for this reason. Our algorithm is based off work from Microsoft Research and the University of North Carolina as presented in the paper - <a href="http://gamma.cs.unc.edu/PrecompWaveSim/docs/paper_docs/paper.pdf">Precomputed Wave Simulation for Real-Time Sound Propagation
+of Dynamic Sources in Complex Scenes</a></p>
+
+<p>The second is that of lingering horror. We often find people trying to convey horrific memories, such as those of wars, and similar tragic events. However this sentiment is rarely felt by the person receiving this communication as the magnitude of horror involved is often far greater than what the revier imagines. Usually, the feeling of horror only sets in when a more power stimulus is offered. This is usually the case with well crafted books, movies, and video games.</p>
+
+<p>In this regard, the maze has <a href="https://www.youtube.com/watch?v=EQgURNvZt_o">Jessie Pope's The Call</a> Permiating throughout the scene. This poem was used to recruit rally and recruit young men for the British war efforts during the First World War.</p>
 
 <h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
 
-<p>Let’s start with a standard hedge maze. These mazes are usually either quite small or are large and have clues to help solve them. This is usually the case to help ensure that the maze can be completed in a reasonable amount of time. Our maze will similarly be quite large, and will have an invisible point source of audio that the user must try to navigate towards. This audio is a narration of some event by an invisible ghost. Users will use the three dimensional nature of the audio to help navigate towards the ghost.</p>
-
-<p>Our maze is three dimensional one that users fly through and in conjunction with the ghost’s narrative, the user can also look to his sides to view some stunning visuals that compliment what the ghost is saying. This setup is akin to the tesseract room from the movie - Interstellar (img: <a href="http://i.imgur.com/ci47vkl.png">http://i.imgur.com/ci47vkl.png</a>).
-We plan to use either Unity 3D or Unreal Engine 4 for this project, depending on what we find provides our intended aesthetics. Furthermore, we plan on using RealSpace3D Audio as reference material for implementing our spatial sound algorithm.</p>
+<p>Users start off at one end of a large maze. Their goal is to find the source of the poem (Jessie Pope's The Call"). They must use the spatial and directional cues being offered to them by this sound. A successful solution of this maze by a user is proof of concept that our algorithm is at least accurate enough to help users take decisions in a grid allowing 4 forking decisions.</p>
 
 <h2>
-<a id="deliverables" class="anchor" href="#deliverables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deliverables</h2>
-
-<p>The main product is a set of scripts or plugin that creates richer audio. Specifically, we aim to mimic echoes, diffusion, direction, reverberation, and other real-world audio effects in real time. To demonstrate this product, we are developing the user experience described above in either Unity 3D or Unreal Engine 4..
-All items to be delivered will be software.</p>
-
-<h2>
-<a id="human-factors" class="anchor" href="#human-factors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Human Factors</h2>
+<a id="human-factors" class="anchor" href="#human-factors" aria-hidden="true"><span class="octicon octicon-link"></span></a>What we found</h2>
 
 <p>There is only a short, half-page section on audio in the Oculus Best Practices guide. The length of the section shows that audio in VR is not being exploited to its full potential. The only concrete recommendation is to use stereo sound which is a rather obvious consideration for VR. Our project will go above and beyond this.</p>
 
