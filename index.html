@@ -10,7 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Directedmemories by modi95</title>
+    <title>Directed Memories by modi95</title>
   </head>
 
   <body>
@@ -32,14 +32,10 @@
 
         <section id="main_content">
           <h1>
-<a id="directed-memories" class="anchor" href="#directed-memories" aria-hidden="true"><span class="octicon octicon-link"></span></a>Directed  Memories</h1>
-
-<p>It's a maze, it's a museum, there are ghosts, there are memories</p>
-
 <h2>
 <a id="motivation--background" class="anchor" href="#motivation--background" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation &amp; Background</h2>
 
-<p>This is being developed as part of the final project for <strong>CS 498sl - Virtual Reality</strong> at the <strong>University of Illinois at Urbana - Champaign</strong> in the Spring 2016 Semester. This is the pilot offering of this class, and is instructed by Steve LaValle.</p>
+<p>This is being developed as part of the final project for <strong>CS 498sl - Virtual Reality</strong> at the <strong>University of Illinois at Urbana - Champaign</strong> in the Spring 2015 Semester. This is the pilot offering of this class, and is instructed by Steve LaValle.</p>
 
 <p>We have two main motivations behind this project. The first of these is the technical problem of spacial audio. The implementation of audio in virtual reality has been attempted but not polished. Current audio engines are built for games with short, nearby sound effects (e.g, gunfire or splashing) and background music. To have a richer virtual reality experience, it must be possible to create richer audio that mimics real-world audio effects in real time. Publicly available research in spatial stereo audio is easy to find, however the publicly available implementations of spacial audio are unremarkable. The best available implementation we’ve found so far is RealSpace3D Audio, a plug in for Unity 3D; however, we did not find this sufficiently robust for our project.</p>
 
@@ -48,7 +44,7 @@ of Dynamic Sources in Complex Scenes</a></p>
 
 <p>The second is that of lingering horror. We often find people trying to convey horrific memories, such as those of wars, and similar tragic events. However this sentiment is rarely felt by the person receiving this communication as the magnitude of horror involved is often far greater than what the revier imagines. Usually, the feeling of horror only sets in when a more power stimulus is offered. This is usually the case with well crafted books, movies, and video games.</p>
 
-<p>In this regard, the maze has <a href="https://www.youtube.com/watch?v=EQgURNvZt_o">Jessie Pope's The Call</a> Permiating throughout the scene. This poem was used to recruit rally and recruit young men for the British war efforts during the First World War.</p>
+<p>In this regard, the maze has <a href="https://www.youtube.com/watch?v=EQgURNvZt_o">Jessie Pope's The Call</a> Permiating throughout the scene. This poem was used to recruit rally and recruit young men for the British war efforts during the First World War. Furthermore, we have scenes from <a href="http://www.bbc.co.uk/programmes/p022twsy">BBC's Our World War</a> playing on the walls in an attempt to juxtapose the attitudes of men as they were being recruited, from when they were at war.</p>
 
 <h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
@@ -58,11 +54,9 @@ of Dynamic Sources in Complex Scenes</a></p>
 <h2>
 <a id="human-factors" class="anchor" href="#human-factors" aria-hidden="true"><span class="octicon octicon-link"></span></a>What we found</h2>
 
-<p>There is only a short, half-page section on audio in the Oculus Best Practices guide. The length of the section shows that audio in VR is not being exploited to its full potential. The only concrete recommendation is to use stereo sound which is a rather obvious consideration for VR. Our project will go above and beyond this.</p>
+<p>Our implementation takes into account the occlusion of sound by items placed between the user and the sound source. This often throws users off from the direction of the source. This is because we have significantly decreased the sound's amplitude falloff with distance, and this leads to rather odd sounding reflections off walls. We decreased the falloff in this manner so as to allow a single source of audio to be heard from everywhere inside the maze</p>
 
-<p>Most of the motion will take place on a one-person boat that flies through the air. The rules of VR acceleration are therefore applicable. Namely, no motion at all is preferable to constant velocity, constant velocity preferable to instantaneous acceleration, and instantaneous acceleration to constant acceleration. </p>
-
-<p>There is one convention we will deliberately break. We plan to put picture frames along the walls, but instead of a picture, or perhaps a window into another physical room, it is an opening to another location or world, so that two or more picture frames next to each other seem to fill each other's space. However, this is a somewhat common trope in cinematography, so we do not expect much discomfort.</p>
+<p></p>
 
 <h2>
 <a id="collaborators" class="anchor" href="#collaborators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Collaborators</h2>
@@ -93,8 +87,6 @@ of Dynamic Sources in Complex Scenes</a></p>
 </tr>
 </tbody>
 </table>
-
-<p>Printable document at <a href="http://goo.gl/RMRTz8">http://goo.gl/RMRTz8</a></p>
         </section>
 
         <footer>
