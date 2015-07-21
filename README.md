@@ -1,4 +1,4 @@
-# Directed Memories
+# DirectedMemories
 It's a maze, it's a museum, there are ghosts, there are memories
 
 ##Motivation & Background
